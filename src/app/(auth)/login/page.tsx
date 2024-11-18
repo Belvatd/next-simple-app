@@ -1,13 +1,29 @@
+import { ModeToggle } from "@/components/ui-group/toggle-mode";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
 export default function Login() {
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-      <h1 className="text-4xl font-bold">Login</h1>
-      {/* <Form action="/search"> */}
-      {/* On submission, the input value will be appended to 
-          the URL, e.g. /search?query=abc */}
-      <input name="query" />
-      <button type="submit">Submit</button>
-      {/* </Form> */}
+    <main className="">
+      <Card>
+        <CardHeader>
+          <div className="flex items-center justify-between">
+            <CardTitle>Login</CardTitle>
+            <ModeToggle />
+          </div>
+        </CardHeader>
+        <CardContent>
+          <p>Card Content</p>
+        </CardContent>
+        <CardFooter>
+          <p>Card Footer</p>
+        </CardFooter>
+      </Card>
     </main>
   );
 }
